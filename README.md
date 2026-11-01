@@ -246,13 +246,15 @@ http://localhost:8501
 
 The application allows users to enter a customer review and receive a sentiment prediction along with the predicted probabilities for both sentiment classes.
 
-## Application Preview 
+## Application Preview
 
-### Positive Sentiment Prediction 
-![Positive Sentiment](screenshots/positive.png) 
+### Positive Sentiment Prediction
 
-### Negative Sentiment Prediction 
-![Negative Sentiment](screenshots/negative.png)
+![Positive Sentiment](Screenshots/positive.png)
+
+### Negative Sentiment Prediction
+
+![Negative Sentiment](Screenshots/negative.png)
 
 ## Future Improvements
 
