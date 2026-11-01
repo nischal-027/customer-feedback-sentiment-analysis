@@ -167,8 +167,9 @@ The test set contained 11,995 reviews:
 
 The Logistic Regression model was trained using class weighting to help account for the imbalance between the two sentiment classes.
 
-Project Structure
+## Project Structure
 
+```text
 Customer_review_analysis/
 │
 ├── models/
@@ -180,122 +181,111 @@ Customer_review_analysis/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+```
 
-File Descriptions
+### File Descriptions
 
-File
+| File | Description |
+|---|---|
+| `main.py` | Streamlit application and sentiment prediction |
+| `preprocessing.py` | Text cleaning, tokenization, stopword removal and stemming |
+| `sentiment_model.pkl` | Trained Logistic Regression model |
+| `tfidf_vectorizer.pkl` | Fitted TF-IDF vectorizer |
+| `requirements.txt` | Python project dependencies |
+| `.gitignore` | Files and folders excluded from Git |
 
-Description
-
-main.py
-
-Streamlit application and sentiment prediction
-
-preprocessing.py
-
-Text cleaning, tokenization, stopword removal and stemming
-
-sentiment_model.pkl
-
-Trained Logistic Regression model
-
-tfidf_vectorizer.pkl
-
-Fitted TF-IDF vectorizer
-
-requirements.txt
-
-Python project dependencies
-
-.gitignore
-
-Files and folders excluded from Git
-
-Installation and Setup
+## Installation and Setup
 
 Follow these steps to run the project locally.
 
-1. Clone the Repository
+### 1. Clone the Repository
 
+```bash
 git clone https://github.com/nischal-027/customer-feedback-sentiment-analysis.git
+```
 
-2. Navigate to the Project Directory
+### 2. Navigate to the Project Directory
 
+```bash
 cd customer-feedback-sentiment-analysis
+```
 
-3. Create a Virtual Environment
+### 3. Create a Virtual Environment
 
+```bash
 python -m venv .venv
+```
 
-4. Activate the Virtual Environment
+### 4. Activate the Virtual Environment
 
 For Windows PowerShell:
 
+```powershell
 .venv\Scripts\Activate.ps1
+```
 
-5. Install Dependencies
+### 5. Install Dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
-6. Run the Streamlit Application
+### 6. Run the Streamlit Application
 
+```bash
 streamlit run main.py
+```
 
 The application will open in your browser, usually at:
 
+```text
 http://localhost:8501
+```
 
 ## Application Preview
 
-### Positive Sentiment Prediction
+The application allows users to enter a customer review and receive a sentiment prediction along with the predicted probabilities for both sentiment classes.
 
-![Positive Sentiment](screenshots/positive.png)
+## Application Preview 
 
-### Negative Sentiment Prediction
+### Positive Sentiment Prediction 
+![Positive Sentiment](screenshots/positive.png) 
 
+### Negative Sentiment Prediction 
 ![Negative Sentiment](screenshots/negative.png)
 
-
-Future Improvements
+## Future Improvements
 
 Some potential improvements for future development include:
 
-Experimenting with Lemmatization and comparing it with Stemming.
+- Experimenting with Lemmatization and comparing it with Stemming.
+- Exploring Word2Vec and other word embedding techniques.
+- Experimenting with deep learning models such as LSTM and BiLSTM.
+- Exploring transformer-based sentiment classification models.
+- Adding sentiment distribution dashboards and customer feedback analytics.
+- Deploying the application online for public access.
+- Improving prediction reliability through additional validation and error analysis.
 
-Exploring Word2Vec and other word embedding techniques.
-
-Experimenting with deep learning models such as LSTM and BiLSTM.
-
-Exploring transformer-based sentiment classification models.
-
-Adding sentiment distribution dashboards and customer feedback analytics.
-
-Deploying the application online for public access.
-
-Improving prediction reliability through additional validation and error analysis.
-
-Learning Outcomes
+## Learning Outcomes
 
 Through this project, I gained practical experience in:
 
-Natural Language Processing and text preprocessing.
+- Natural Language Processing and text preprocessing.
+- Converting unstructured text into numerical features.
+- Training and comparing Machine Learning classification models.
+- Evaluating models using multiple classification metrics.
+- Saving and deploying trained Machine Learning models.
+- Building interactive applications using Streamlit.
+- Managing project dependencies and version control using Git and GitHub.
 
-Converting unstructured text into numerical features.
+---
 
-Training and comparing Machine Learning classification models.
+## Author
 
-Evaluating models using multiple classification metrics.
+**Nischal Acharya**
 
-Saving and deploying trained Machine Learning models.
+GitHub: [@nischal-027](https://github.com/nischal-027)
 
-Building interactive applications using Streamlit.
-
-Managing project dependencies and version control using Git and GitHub.
-
-Author
-
-Nischal Acharya
-
-GitHub: @nischal-027
+---
 
 If you find this project useful, feel free to explore the repository and provide feedback!
