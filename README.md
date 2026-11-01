@@ -165,4 +165,137 @@ The test set contained 11,995 reviews:
 - Negative: 4,394
 - Positive: 7,601
 
-The Logistic
+The Logistic Regression model was trained using class weighting to help account for the imbalance between the two sentiment classes.
+
+Project Structure
+
+Customer_review_analysis/
+│
+├── models/
+│   ├── sentiment_model.pkl
+│   └── tfidf_vectorizer.pkl
+│
+├── main.py
+├── preprocessing.py
+├── requirements.txt
+├── README.md
+└── .gitignore
+
+File Descriptions
+
+File
+
+Description
+
+main.py
+
+Streamlit application and sentiment prediction
+
+preprocessing.py
+
+Text cleaning, tokenization, stopword removal and stemming
+
+sentiment_model.pkl
+
+Trained Logistic Regression model
+
+tfidf_vectorizer.pkl
+
+Fitted TF-IDF vectorizer
+
+requirements.txt
+
+Python project dependencies
+
+.gitignore
+
+Files and folders excluded from Git
+
+Installation and Setup
+
+Follow these steps to run the project locally.
+
+1. Clone the Repository
+
+git clone https://github.com/nischal-027/customer-feedback-sentiment-analysis.git
+
+2. Navigate to the Project Directory
+
+cd customer-feedback-sentiment-analysis
+
+3. Create a Virtual Environment
+
+python -m venv .venv
+
+4. Activate the Virtual Environment
+
+For Windows PowerShell:
+
+.venv\Scripts\Activate.ps1
+
+5. Install Dependencies
+
+pip install -r requirements.txt
+
+6. Run the Streamlit Application
+
+streamlit run main.py
+
+The application will open in your browser, usually at:
+
+http://localhost:8501
+
+## Application Preview
+
+### Positive Sentiment Prediction
+
+![Positive Sentiment](screenshots/positive.png)
+
+### Negative Sentiment Prediction
+
+![Negative Sentiment](screenshots/negative.png)
+
+
+Future Improvements
+
+Some potential improvements for future development include:
+
+Experimenting with Lemmatization and comparing it with Stemming.
+
+Exploring Word2Vec and other word embedding techniques.
+
+Experimenting with deep learning models such as LSTM and BiLSTM.
+
+Exploring transformer-based sentiment classification models.
+
+Adding sentiment distribution dashboards and customer feedback analytics.
+
+Deploying the application online for public access.
+
+Improving prediction reliability through additional validation and error analysis.
+
+Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+Natural Language Processing and text preprocessing.
+
+Converting unstructured text into numerical features.
+
+Training and comparing Machine Learning classification models.
+
+Evaluating models using multiple classification metrics.
+
+Saving and deploying trained Machine Learning models.
+
+Building interactive applications using Streamlit.
+
+Managing project dependencies and version control using Git and GitHub.
+
+Author
+
+Nischal Acharya
+
+GitHub: @nischal-027
+
+If you find this project useful, feel free to explore the repository and provide feedback!
